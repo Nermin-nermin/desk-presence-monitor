@@ -3,6 +3,10 @@
 Shows, live from an office camera, whether each desk is **occupied** or **empty**, and produces a report
 of occupancy per desk over the monitored period.
 
+Inspired by Huseyn Hasanov's [AI Employee Monitoring Using Computer Vision](https://www.linkedin.com/feed/update/urn:li:activity:7525847005479399425/)
+post (YOLO + OpenCV, working / absent / phone states). This project narrows the idea to desk presence only and
+monitors desks rather than individual people.
+
 ## Why it works this way
 
 - **Desks, not people.** The system watches drawn desk zones and asks "is someone sitting here?". It never
