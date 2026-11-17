@@ -1,0 +1,38 @@
+# Model weights (downloaded automatically by Ultralytics on first run)
+*.pt
+*.onnx
+*.engine
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Run outputs and local data
+output/
+output_*/
+test_data/
+*.db
+*.db-wal
+*.db-shm
+
+# Video and camera frames: may show real people, never commit them
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.ref.jpg
+*.ref.png
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Camera credentials
+.env
+*.env
+!.env.example

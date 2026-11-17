@@ -1,0 +1,16 @@
+# Desk presence monitor settings
+
+model: yolo11n.pt        # yolo11n = fastest (CPU OK). yolo11s / yolo11m = more accurate, needs more compute
+confidence: 0.3
+imgsz: 960               # inference size; raise to 960/1280 for wide cameras with small, distant people
+detect_every: 2          # run detection on every Nth frame (higher = faster, less responsive)
+
+min_overlap: 0.25        # share of a person's box that must be inside a desk zone to count as "at desk"
+
+# Debounce timers (seconds) - this is what stops flicker and false alarms
+enter_seconds: 1         # must be at the desk this long before marked PRESENT (ignores walk-bys)
+leave_seconds: 2        # must be gone this long before marked AWAY (ignores missed detections)
+alert_seconds: 6        # demo only: real deployment uses 300
+
+privacy_blur: true       # pixelate people in the displayed / saved video
+display_width: 1280      # width of the on-screen window

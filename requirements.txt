@@ -1,0 +1,8 @@
+ultralytics>=8.3
+opencv-python>=4.8
+numpy
+pyyaml
+fastapi
+uvicorn
+httpx    # for API tests
+pytest   # only for running tests
