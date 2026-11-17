@@ -186,10 +186,12 @@ python monitor.py --source office.mp4 --zones examples/open_plan_demo/zones_all_
 The example zone files name a `reference_image` that is not included (it would be a frame of the clip). The monitor then
 uses the first frame of the video as the reference, which is the frame the zones were drawn on.
 
-## Licence note
+## Licence
 
-Ultralytics YOLO is AGPL-3.0. For internal or commercial use without open-sourcing the whole project, Ultralytics requires
-its Enterprise licence. Alternatively swap `detector.py` for a permissively licensed detector and re-run `tools/evaluate.py`.
+This project is licensed under the **GNU AGPL-3.0** (see `LICENSE`), matching its detector dependency,
+Ultralytics YOLO (AGPL-3.0). If you use it inside a product or service without releasing your source under AGPL-3.0,
+Ultralytics requires its Enterprise licence; alternatively swap `detector.py` for a permissively licensed detector
+and re-run `tools/evaluate.py`.
 
 ## Before using it on real staff
 
